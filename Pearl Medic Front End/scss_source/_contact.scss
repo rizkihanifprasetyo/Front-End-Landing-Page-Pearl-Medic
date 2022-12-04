@@ -1,0 +1,124 @@
+#contact {
+    .container {
+        display: grid;
+        grid-template-columns: 47% 47%;
+        gap: 6%;
+
+        .contact_left {
+            h2 {
+                font-size: 25px;
+                text-transform: uppercase;
+                color: $warna-dark;
+            }
+
+            p {
+                margin: 0.5rem 0 2rem;
+                color: $warna-pendukung2;
+            }
+
+            .contact_info {
+                display: flex;
+                gap: 1.5rem;
+                margin-bottom: 1.5rem;
+
+                .contact_icon {
+                    font-size: 25px;
+                    font-weight: 900;
+                    margin-top: -10px;
+                    color: $warna-dark;
+                    background-color: $warna-pendukung1;
+                    padding: 5px 15px;
+                    border-radius: 50%;
+                    text-align: center;
+                    align-items: center;
+
+                    &:hover {
+                        background-color: $warna-dark;
+                        color: $warna-light;
+                        transition: .4s all ease;
+                    }
+                }
+
+                .contact_text h4 {
+                    font-size: 16px;
+                    color: $warna-pendukung2;
+
+                    a {
+                        color: $warna-pendukung2;
+
+                        &:hover {
+                            color: $warna-dark;
+                            text-decoration: underline;
+                            transition: .4s all ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#contact {
+    .container {
+        .form_contact {
+            display: flex;
+            flex-direction: column;
+            gap: 1.4rem;
+
+            .form_group {
+                label {
+                    font-size: 14px;
+                    margin-bottom: 4px;
+                    display: inline-block;
+                    font-weight: 600;
+                    color: $warna-pendukung2;
+                }
+
+                input,
+                textarea {
+                    background: $warna-putih;
+                    padding: 10px 10px;
+                    display: block;
+                    width: 100%;
+                    border-radius: 5px;
+                    outline: none;
+                    font-family: 'Questrial', sans-serif;
+                    color: $warna-pendukung2;
+                    resize: none;
+                    appearance: none;
+                }
+            }
+
+            .btn {
+                color: $warna-light;
+
+                &:hover {
+                    color: $warna-pendukung4;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    #contact{
+        .container{
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+    }
+}
+@media screen and (max-width: 400px){
+    #contact{
+        .container{
+            .contact_left{
+                .contact_info{
+                    .contact_text h4 a{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+#header{
+    // @include gradientbackground;
+    // background-image: url(/img/assets/doctor2.jpg);
+    // background-size: cover;
+
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    z-index: 10;
+    .container{
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: 55% 46%;
+        align-items: center;
+        justify-content: center;
+        z-index: 11;
+        position: relative;
+        img{
+            width: 110%;
+            position: absolute;
+            height: 130%;
+            object-fit: cover;
+            object-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+            // background-position: bottom left;
+        }
+        .header_content{
+            margin-left: 80px;
+            z-index: 1000;
+        }
+        .header_content h1 span{
+            color: $warna-dark;
+            font-weight: 900;
+        }
+        .header_content h1{
+            color: $warna-pendukung1;
+            margin-bottom: 15px;
+            font-size: 30px;
+            font-weight: 600;
+            // z-index: 11;
+        }
+        p{
+            margin: 1rem 0 2rem;
+            color: $warna-pendukung2;
+            font-weight: 600;
+            // z-index: 11;
+        }
+        .header_content .btn{
+            color: $warna-putih;
+            // z-index: 11;
+        }
+        .header_content .btn:hover{
+            color: $warna-pendukung4;
+            // z-index: 11;
+        }
+    }
+}
+.swiper-pagination-bullet{
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: .2rem !important;
+    background: $warna-dark !important;
+    opacity: 1 !important;
+    color: $warna-pendukung;
+}
+.swiper-pagination-bullet-active{
+    width: 1.5rem !important;
+    background: $warna-pendukung2 !important;
+}
+// #header::after{
+//     content: '';
+//     position: fixed;
+//     left: 0;
+//     top: 0;
+//     height: 100%;
+//     width: 100%;
+//     background-color: $warna-dark;
+//     opacity: .7;    
+//     z-index: 1;
+// }
+
+@media screen and (max-width:790px){
+    #header .container{
+        display: inline;
+        margin-top: 0rem;
+        // grid-template-columns: none none;
+    }
+    #header .container .header_content{
+        margin-top: 25rem;
+        margin-left: 30px;
+    }
+    #header .container .header_content h1{
+        font-size: 20px;
+        font-weight: 900;
+    }
+}
+@media screen and (max-width:500px){
+    #header .container .header_content{
+        margin-top: 20rem;
+        // margin-left: 30px;
+    }
+}
+
+

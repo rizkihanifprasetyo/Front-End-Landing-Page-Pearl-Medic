@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&family=Questrial&display=swap'); 
+
+// font-family: 'Lora', serif;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Questrial', sans-serif;
+// Variabel yang akan digunakan
+
+$warna-utama: #C8DBBE;
+$warna-pendukung: #D8D9CF;
+$warna-pendukung1: #9F8772;
+$warna-pendukung2: #665A48;
+$warna-pendukung3: #01E9B1;
+$warna-pendukung4: #FFE455;
+$warna-putih: #ffffff;
+$warna-hitam: #0c031b;
+$warna-light: rgba(#fff, 0.7);
+$warna-dark: rgba($warna-hitam, 0.7);
+$container-lg: 82%; //untuk large screen
+$container-md: 90%; //untuk mid/small screen
+
+
+// STYLE BODY
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: $warna-pendukung;
+}
+section{
+    padding: 4.5rem 0 1.5rem;
+}

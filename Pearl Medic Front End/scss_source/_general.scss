@@ -1,0 +1,72 @@
+
+// GLOBAL CSS
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    line-height: 1.5;
+    user-select: none;
+    font-family: 'Questrial', sans-serif;
+    user-select: none;
+
+}
+.container{
+    width: $container-lg;
+    margin: 0 auto;
+}
+
+img{
+    display: flex;
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5{
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+}
+section{
+    // margin-top: 6rem;
+    & > h2{
+        text-align: center;
+    }
+    & > p{
+        text-align: center;
+        width: 45%;
+        margin: 0.6rem auto 2.5rem;
+        font-family: 'Lora', serif;
+    }
+}
+.btn{
+    @include button();
+}
+.btn:hover{
+    background: $warna-dark;
+    // border: 1px solid $warna-putih;
+    color: white;
+    box-shadow: 0.1rem .2rem rgba($warna-hitam, 0.15);
+}
+.btn-primary{
+    @include button($warna-putih, $warna-utama);
+}
+
+// Media QUERY (Medium Devices)
+@media screen and (max-width: 1024px){
+    .container{
+        width: $container-md;
+    }
+    section{
+        & > p {
+            width: 55%;
+        }
+    }
+}
+// Media QUERY (small Devices)
+@media screen and (max-width: 600px){
+    section{
+        & > p {
+            width: $container-md;
+        }
+    }
+}

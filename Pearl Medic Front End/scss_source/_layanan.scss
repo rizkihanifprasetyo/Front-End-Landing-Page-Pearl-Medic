@@ -1,0 +1,83 @@
+#layanan{
+    h2{
+        color: $warna-dark;
+        text-transform: uppercase;
+    }
+    .text{
+        color: $warna-pendukung2;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        .logo_layanan{
+            @include gradientbackground;
+            padding: 1.5rem;
+            border-radius: 10px;
+            display: flex;
+            gap: 1.5rem;
+            height: fit-content;
+            transition: all .4s ease;
+            &:hover{
+                margin-top: -.5rem;
+                i{
+                    color: $warna-putih;
+                }
+            }
+            i{
+                font-size: 25px;
+                color: $warna-dark;
+            }
+            .ket_layanan{
+                h4{
+                    margin-bottom: 1rem;
+                    font-size: 20px;
+                }
+                p{
+                    margin-bottom: 1rem;
+                }
+                .btn{
+                    color: $warna-putih;
+                    &:hover{
+                        box-shadow: 0.1rem .2rem rgba($warna-hitam, 0.15);
+                        color: $warna-pendukung4;
+                    }
+                }
+                
+            }
+            
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width: 1024px){
+    #layanan{
+        .container{
+            gap: 1rem;
+            .logo_layanan{
+                padding: 1.2rem;
+                gap: .8rem;
+                &:hover{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 650px){
+    #layanan{
+        .container{
+            grid-template-columns: 1fr;
+            .logo_layanan{
+                .ket_layanan{
+                    h4{
+                        margin-bottom: .8rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+#history {
+    h2{
+        color: $warna-dark;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .text{
+        color: $warna-pendukung2;
+    }
+
+    // width: $container-lg;
+    .container {
+        width: 50%;
+
+        .ket_history {
+            @include gradientbackground;
+            padding: 1.5rem 2rem;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            gap: 1rem;
+
+            p {
+                margin-bottom: 10px;
+                span{
+                    color: $warna-pendukung4;
+                }
+            }
+
+            a {
+                color: $warna-putih;
+
+                &:hover {
+                    color: $warna-pendukung4;
+                }
+            }
+        }
+
+        .ket_history:hover {
+            .flex_row {
+                i {
+                    color: $warna-putih;
+                }
+            }
+        }
+    }
+}
+
+.flex_row {
+    display: flex;
+    margin-bottom: 10px;
+
+    i {
+        font-size: 25px;
+        color: $warna-dark;
+        margin-right: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+}
+
+#history .btn_selengkapnya {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.selengkapnya {
+    color: $warna-putih;
+
+    &:hover {
+        color: $warna-pendukung4;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #history {
+        .container {
+            .ket_history {
+                padding: 1.5rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px){
+    #history{
+        .container{
+            width: 90%;
+        }
+    }
+}
